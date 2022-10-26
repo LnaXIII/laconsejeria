@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/consejeria.css">
+	<script type="text/javascript" src="js/consejeria.js"></script>
+	<title>La consejería</title>
+</head>
+<body>
+
+	<div id="intro">
+	<h1>La Consejería</h1>
+	<p>En <em>La Consejería</em> encontrarás el consejo que necesitas para salir del mar de dudas en el que vives. Haz clic en cualquiera de los botones de abajo para recibir tu consejo.</p>
+	</div>
+
+	<h2>Cuéntanos, ¿qué te tortura?</h2>
+	
+	<div id="buttons">
+	<button class="question" onclick="document.getElementById('answer').innerHTML ='¡Despierta! Dile a tu jefe lo que piensas, pero lo que piensas de verdad: que es un incompetenete de tomo y lomo y que no soportas ni un solo día más trabajando ahí. Sonríe, recoge tus cosas y sal corriendo. Ya nos darás las gracias luego. De nada.';">Trabajo</button>
+	<button class="question" onclick="document.getElementById('answer').innerHTML ='Dile a tu madre que no tiene razón. Dile a tu padre que ya está bien de condescendencia. A tu abuela dale un abrazo enorme. Con eso será suficiente.';">Familia</button>
+	<button class="question" onclick="document.getElementById('answer').innerHTML = '¿Te suena eso de los BitCoins? Pues alejate de ellos. Deja de comprar donettes y de tomarte una copa los viernes despues de trabajar. Si tienes suelto, mételo en una hucha. Si no tienes, ve al cajero y saca algo, que nunca viene mal llevar diez euros encima. Si tienes mas de 30 años y todavía no has abierto un plan de pensiones, hazlo ahora mismo. Sigue trabajando y echa la primitiva de vez en cuando. Mucha suerte.';">Dinero</button>
+	<button class="question" onclick="document.getElementById('answer').innerHTML = 'Ojalá no fuera yo quien tuviera que decírtelo, pero esa persona no te conviene. No hagas ghosting, que está muy feo. Queda cara a cara y explícale, punto por punto, por qué en realidad no le soportas y la relación tiene que acabar hoy. De nada.';" >Amor</button>
+	<button class="question" onclick="document.getElementById('answer').innerHTML = 'Tus amigos son unos pesados y tus amigas más de lo mismo. Súper aburridos todos. Tú te mereces más. Ponles en el congelador durante un tiempo y cambia de aires. Haz paracaidismo, apúntate a salsa o únete a un club de esgrima. Allí conocerás gente chachi.';">Amistad</button>
+	</div>
+
+	<div id="answer">
+		<p>El consejo que estás esperando aparecerá aquí en cuanto hagas clic en uno de los botones de arriba. ¡Pruébalo!</p>
+	</div>
+	<button class="info" onclick="abririnfo()">(!) Información importante sobre La Consejería</button>
+	<div id="importante">
+	<p>La Consejería te ofrece el consejo que necesitas, no el que quieres leer. Por otro lado, La Consejería no se hace responsable de los resultados de aplicar los consejos ofrecidos. Es tu vida, así que, bueno, deberías hacerte responsable tú de ella, ¿no te parece? </p> <button onclick="cerrarinfo()">Cerrar info</button>
+	</div>
+	<footer>&copy; La Consejería, 2022 - Elena Álvarez</footer>
+</body>
+</html>
